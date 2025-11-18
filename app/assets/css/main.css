@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "@fontsource/inter"; /* variable font */
 
 @custom-variant dark (&:is(.dark *));
 
@@ -68,6 +69,7 @@
   --gray-900: oklch(0.6772 0.0127 231.75);  /* icon */
   --border-primary: oklch(0.9333 0.0011 197.14);
   --4xl-custom: 40px;
+  --font-primary: 'Inter', sans-serif;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -143,4 +145,21 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+body {
+    font-family: var(--font-primary);
+}
+
+@utility container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px; /* موبایل */
+    padding-right: 16px;
+
+    @media (min-width: 1024px) { /* دسکتاپ */
+        padding-left: 220px;
+        padding-right: 220px;
+    }
 }
