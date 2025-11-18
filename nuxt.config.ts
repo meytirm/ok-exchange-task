@@ -6,6 +6,14 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true,
   },
-
-  modules: ['@nuxt/eslint'],
+  eslint: {
+    config: {
+      stylistic: {
+        indent: 2,
+        semi: false,
+        quotes: 'single',
+      },
+    },
+  },
+  modules: ['@nuxt/eslint']
 })
