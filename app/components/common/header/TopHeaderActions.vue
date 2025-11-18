@@ -7,7 +7,6 @@
       Log In
     </Button>
     <BrandButton
-      class="bg-brand text-grey-new-900 hover:bg-brand/80 font-semibold text-sm"
       size="sm"
     >
       Sign Up
