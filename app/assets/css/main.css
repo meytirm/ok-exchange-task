@@ -1,9 +1,23 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "@fontsource/inter"; /* variable font */
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-gray-100: var(--gray-100);
+  --color-gray-200: var(--gray-200);
+  --color-gray-300: var(--gray-300);
+  --color-gray-400: var(--gray-400);
+  --color-gray-500: var(--gray-500);
+  --color-gray-600: var(--gray-600);
+  --color-gray-700: var(--gray-700);
+  --color-gray-800: var(--gray-800);
+  --color-gray-900: var(--gray-900);
+  --color-border-primary: var(--border-primary);
+  --text-4xl-custom: var(--4xl-custom);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -42,6 +56,20 @@
 }
 
 :root {
+  --brand: oklch(0.8961 0.1757 98.54);
+  --brand-foreground: oklch(0.7541 0.1484 87.43);
+  --gray-100: oklch(0.9846 0.0017 247.84);  /* table/card background */
+  --gray-200: oklch(0.9672 0 0);  /* google button background */
+  --gray-300: oklch(0.9333 0.0011 197.14);  /* signup button background */
+  --gray-400: oklch(0.5953 0.0103 232.48);  /* card subtitle */
+  --gray-500: oklch(0.471 0.0071 223.55);  /* subtitle text */
+  --gray-600: oklch(0.329 0 0);  /* button text */
+  --gray-700: oklch(0.228 0.0049 219.69);  /* section header title */
+  --gray-800: oklch(0.1906 0.0026 247.96);  /* card title / button text */
+  --gray-900: oklch(0.6772 0.0127 231.75);  /* icon */
+  --border-primary: oklch(0.9333 0.0011 197.14);
+  --4xl-custom: 40px;
+  --font-primary: 'Inter', sans-serif;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -117,4 +145,21 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+body {
+    font-family: var(--font-primary);
+}
+
+@utility container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px; /* موبایل */
+    padding-right: 16px;
+
+    @media (min-width: 1024px) { /* دسکتاپ */
+        padding-left: 220px;
+        padding-right: 220px;
+    }
 }
