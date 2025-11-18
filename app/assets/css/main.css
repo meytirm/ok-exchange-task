@@ -15,18 +15,28 @@
 @theme inline {
   --color-brand: var(--brand);
   --color-brand-foreground: var(--brand-foreground);
-  --color-gray-100: var(--gray-100);
-  --color-gray-200: var(--gray-200);
-  --color-gray-300: var(--gray-300);
-  --color-gray-400: var(--gray-400);
-  --color-gray-500: var(--gray-500);
-  --color-gray-600: var(--gray-600);
-  --color-gray-700: var(--gray-700);
-  --color-gray-800: var(--gray-800);
-  --color-gray-900: var(--gray-900);
+  --color-grey-new-0: var(--grey-new-0);
+  --color-grey-new-100: var(--grey-new-100);
+  --color-grey-new-200: var(--grey-new-200);
+  --color-grey-new-300: var(--grey-new-300);
+  --color-grey-new-400: var(--grey-new-400);
+  --color-grey-new-500: var(--grey-new-500);
+  --color-grey-new-700: var(--grey-new-700);
+  --color-grey-new-800: var(--grey-new-800);
+  --color-grey-new-900: var(--grey-new-900);
+  --color-white-new-100: var(--white-new-100);
+  --color-white-new-200: var(--white-new-200);
+  --color-white-new-300: var(--white-new-300);
+  --color-white-new-400: var(--white-new-400);
+  --color-white-new-500: var(--white-new-500);
+  --color-white-new-600: var(--white-new-600);
+  --color-white-new-700: var(--white-new-700);
+  --color-white-new-800: var(--white-new-800);
+  --color-white-new-900: var(--white-new-900);
+  --colo--natural-black-500: var(--natural-black-500);
   --color-border-primary: var(--border-primary);
-  --color-success: var(--success);
-  --color-error: var(--error);
+  --color-buy: var(--buy);
+  --color-sell: var(--sell);
   --text-4xl-custom: var(--4xl-custom);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -68,17 +78,28 @@
 :root {
   --brand: oklch(0.8961 0.1757 98.54);
   --brand-foreground: oklch(0.7541 0.1484 87.43);
-  --gray-100: oklch(0.9846 0.0017 247.84);  /* table/card background */
-  --gray-200: oklch(0.9672 0 0);  /* google button background */
-  --gray-300: oklch(0.9333 0.0011 197.14);  /* signup button background */
-  --gray-400: oklch(0.5953 0.0103 232.48);  /* card subtitle */
-  --gray-500: oklch(0.471 0.0071 223.55);  /* subtitle text */
-  --gray-600: oklch(0.329 0 0);  /* button text */
-  --gray-700: oklch(0.228 0.0049 219.69);  /* section header title */
-  --gray-800: oklch(0.1906 0.0026 247.96);  /* card title / button text */
-  --gray-900: oklch(0.6772 0.0127 231.75);  /* icon */
-  --success: oklch(0.7048 0.1402 167.43);
-  --error: oklch(0.6507 0.2111 14.84);
+  --grey-new-100: oklch(0.5953 0.0103 232.48);
+  --grey-new-200: oklch(0.471 0.0071 223.55);
+  --grey-new-300: oklch(0.4164 0.0073 223.58);
+  --grey-new-400: oklch(0.3827 0.0075 223.61);
+  --grey-new-500: oklch(0.335 0.0067 248.03);
+  --grey-new-600: oklch(0.2878 0.0046 247.99);
+  --grey-new-700: oklch(0.2591 0.0048 248.01);
+  --grey-new-800: oklch(0.228 0.0049 219.69);
+  --grey-new-900: oklch(0.1906 0.0026 247.96);
+  --grey-new-0: oklch(0.6772 0.0127 231.75);
+  --white-new-100: oklch(0.9846 0.0017 247.84);
+  --white-new-200: oklch(0.9644 0.0013 286.37);
+  --white-new-300: oklch(0.9333 0.0011 197.14);
+  --white-new-400: oklch(0.8996 0.0035 247.86);
+  --white-new-500: oklch(0.8646 0.006 239.83);
+  --white-new-600: oklch(0.8368 0.0061 239.84);
+  --white-new-700: oklch(0.7964 0.0072 247.92);
+  --white-new-800: oklch(0.7275 0.0108 238.57);
+  --white-new-900: oklch(0.6772 0.0127 231.75);
+  --natural-black-500: oklch(0.0885 0.0139 283.18);
+  --buy: oklch(0.7048 0.1402 167.43);
+  --sell: oklch(0.6507 0.2111 14.84);
   --border-primary: oklch(0.9333 0.0011 197.14);
   --4xl-custom: 40px;
   --font-primary: 'Inter', sans-serif;
