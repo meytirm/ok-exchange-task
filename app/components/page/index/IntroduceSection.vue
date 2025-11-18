@@ -9,7 +9,7 @@
       </p>
       <div class="introduce-join">
         <form
-          class="flex gap-2 items-center max-w-[70%]"
+          class="flex gap-2 items-center max-w-[70%] grow"
           @submit.prevent="onSubmit"
         >
           <FieldGroup>
@@ -36,10 +36,14 @@
               </Field>
             </VeeField>
           </FieldGroup>
-          <BrandButton type="submit">
+          <BrandButton
+            type="submit"
+            size="lg"
+          >
             Join & Earn $25 Bonus
           </BrandButton>
         </form>
+        <GoogleButton />
       </div>
     </div>
     <div class="w-[35%]">
@@ -59,6 +63,7 @@ import {
   FieldError,
   FieldGroup,
 } from '@/components/ui/field'
+import GoogleButton from '~/components/common/header/GoogleButton.vue'
 
 const formSchema = toTypedSchema(
   z.object({
