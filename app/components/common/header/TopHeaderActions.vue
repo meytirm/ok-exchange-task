@@ -6,12 +6,12 @@
     >
       Log In
     </Button>
-    <Button
+    <BrandButton
       class="bg-brand text-grey-new-900 hover:bg-brand/80 font-semibold text-sm"
       size="sm"
     >
       Sign Up
-    </Button>
+    </BrandButton>
     <div class="hidden md:block">
       <TopHeaderIcons />
     </div>
@@ -25,6 +25,7 @@
 import { Button } from '~/components/ui/button'
 import TopHeaderIcons from '~/components/common/header/TopHeaderIcons.vue'
 import MobileNavigation from '~/components/common/MobileNavigation.vue'
+import BrandButton from '~/components/common/BrandButton.vue'
 </script>
 
 <style scoped>
