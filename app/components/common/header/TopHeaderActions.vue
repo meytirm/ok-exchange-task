@@ -12,29 +12,19 @@
     >
       Sign Up
     </Button>
-    <img
-      :src="Download"
-      width="24px"
-      alt="download"
-    >
-    <img
-      :src="Light"
-      width="24px"
-      alt="light"
-    >
-    <img
-      :src="Language"
-      width="24px"
-      alt="language"
-    >
+    <div class="hidden md:block">
+      <TopHeaderIcons />
+    </div>
+    <div class="md:hidden">
+      <MobileNavigation />
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { Button } from '~/components/ui/button'
-import Download from '@/assets/icons/web_download.svg'
-import Light from '@/assets/icons/light.svg'
-import Language from '@/assets/icons/web_language 1.svg'
+import TopHeaderIcons from '~/components/common/header/TopHeaderIcons.vue'
+import MobileNavigation from '~/components/common/MobileNavigation.vue'
 </script>
 
 <style scoped>
