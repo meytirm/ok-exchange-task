@@ -9,18 +9,58 @@
           v-for="menuItem in topHeaderNavigationMenu"
           :key="menuItem.label"
         >
-          <NavigationMenuTrigger class="top-header-navigation-menu-trigger">
-            {{ menuItem.label }}
-          </NavigationMenuTrigger>
-          <NavigationMenuContent>
+          <template v-if="menuItem.children">
+            <NavigationMenuTrigger class="top-header-navigation-menu-trigger">
+              {{ menuItem.label }}
+            </NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul class="grid gap-2 w-[255px]">
+                <NavigationMenuLink
+                  v-for="subMenuItem in menuItem.children"
+                  :key="subMenuItem.title"
+                  as-child
+                >
+                  <NavigationMenuItem
+                    :href="subMenuItem.link"
+                  >
+                    <div
+                      class="flex gap-1 py-2"
+                      :class="!subMenuItem.subtitle && 'items-center'"
+                    >
+                      <div>
+                        <img
+                          :src="subMenuItem.icon"
+                          width="16px"
+                        >
+                      </div>
+                      <div class="flex flex-col gap-2">
+                        <p
+                          class="text-sm text-gray-800 font-medium"
+                          :class="subMenuItem.subtitle && 'leading-4'"
+                        >
+                          {{ subMenuItem.title }}
+                        </p>
+                        <p
+                          v-if="subMenuItem.subtitle"
+                          class="text-gray-900 text-xs"
+                        >
+                          {{ subMenuItem.subtitle }}
+                        </p>
+                      </div>
+                    </div>
+                  </NavigationMenuItem>
+                </NavigationMenuLink>
+              </ul>
+            </NavigationMenuContent>
+          </template>
+          <template v-else>
             <NavigationMenuLink
-              v-for="subMenuItem in menuItem.children"
-              :key="subMenuItem.title"
+              class="hover:text-brand-foreground"
+              as-child
             >
-              <img :src="subMenuItem.icon">
-              {{ subMenuItem.title }}
+              <a :href="menuItem.href">{{ menuItem.label }}</a>
             </NavigationMenuLink>
-          </NavigationMenuContent>
+          </template>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
