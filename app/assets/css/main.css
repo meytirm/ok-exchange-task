@@ -194,7 +194,7 @@ body {
 }
 
 .top-header {
-    @apply px-8 py-4 flex justify-between items-center;
+    @apply px-8 py-4 flex md:justify-between items-center justify-end;
 }
 
 .top-header-navigation-menu-trigger {
