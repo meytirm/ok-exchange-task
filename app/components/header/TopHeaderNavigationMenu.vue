@@ -35,14 +35,14 @@
                       </div>
                       <div class="flex flex-col gap-2">
                         <p
-                          class="text-sm text-gray-800 font-medium"
+                          class="text-sm text-grey-new-900 font-medium"
                           :class="subMenuItem.subtitle && 'leading-4'"
                         >
                           {{ subMenuItem.title }}
                         </p>
                         <p
                           v-if="subMenuItem.subtitle"
-                          class="text-gray-900 text-xs"
+                          class="text-white-new-900 text-xs"
                         >
                           {{ subMenuItem.subtitle }}
                         </p>
