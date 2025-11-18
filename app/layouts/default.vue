@@ -1,5 +1,6 @@
 <template>
   <div class="">
+    <TopHeader />
     <main class="container">
       <slot />
     </main>
@@ -7,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-
+import TopHeader from '~/components/header/TopHeader.vue'
 </script>
 
 <style scoped>
