@@ -16,11 +16,7 @@
       <TopHeaderIcons />
     </div>
     <div class="md:hidden">
-      <img
-        :src="Menu"
-        alt="menu"
-        width="24px"
-      >
+      <MobileNavigation />
     </div>
   </div>
 </template>
@@ -28,7 +24,7 @@
 <script setup lang="ts">
 import { Button } from '~/components/ui/button'
 import TopHeaderIcons from '~/components/common/header/TopHeaderIcons.vue'
-import Menu from '~/assets/icons/menu.svg'
+import MobileNavigation from '~/components/common/MobileNavigation.vue'
 </script>
 
 <style scoped>
