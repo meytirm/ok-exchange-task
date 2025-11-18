@@ -2,12 +2,12 @@
   <div class="flex gap-4 items-center">
     <Button
       size="sm"
-      class="bg-gray-300 text-gray-800 hover:bg-gray-300/80 font-semibold text-sm"
+      class="bg-white-new-300 text-grey-new-900 hover:bg-white-new-300/80 font-semibold text-sm"
     >
       Log In
     </Button>
     <Button
-      class="bg-brand text-gray-800 hover:bg-brand/80 font-semibold text-sm"
+      class="bg-brand text-grey-new-900 hover:bg-brand/80 font-semibold text-sm"
       size="sm"
     >
       Sign Up
