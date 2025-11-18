@@ -8,11 +8,34 @@
         Secure platform to trade Bitcoin, Ethereum and altcoins with low fees
       </p>
       <div class="introduce-join">
-        <form class="flex gap-2 items-center max-w-[70%]">
-          <Input
-            type="email"
-            placeholder="Email"
-          />
+        <form
+          class="flex gap-2 items-center max-w-[70%]"
+          @submit.prevent="onSubmit"
+        >
+          <FieldGroup>
+            <VeeField
+              v-slot="{ field, errors }"
+              name="email"
+            >
+              <Field
+                :data-invalid="!!errors.length"
+                class="relative"
+              >
+                <Input
+                  id="form-vee-demo-email"
+                  placeholder="Email"
+                  v-bind="field"
+                  autocomplete="off"
+                  :aria-invalid="!!errors.length"
+                />
+                <FieldError
+                  v-if="errors.length"
+                  class="absolute top-10"
+                  :errors="errors"
+                />
+              </Field>
+            </VeeField>
+          </FieldGroup>
           <BrandButton type="submit">
             Join & Earn $25 Bonus
           </BrandButton>
@@ -28,6 +51,31 @@
 <script setup lang="ts">
 import { Input } from '~/components/ui/input'
 import BrandButton from '~/components/common/BrandButton.vue'
+import { toTypedSchema } from '@vee-validate/zod'
+import { z } from 'zod'
+import { useForm, Field as VeeField } from 'vee-validate'
+import {
+  Field,
+  FieldError,
+  FieldGroup,
+} from '@/components/ui/field'
+
+const formSchema = toTypedSchema(
+  z.object({
+    email: z.string().email('enter a correct email'),
+  }),
+)
+
+const { handleSubmit } = useForm({
+  validationSchema: formSchema,
+  initialValues: {
+    email: '',
+  },
+})
+
+const onSubmit = handleSubmit((values) => {
+  console.log(values)
+})
 </script>
 
 <style scoped>
