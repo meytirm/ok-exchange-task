@@ -8,8 +8,8 @@
 </template>
 
 <script setup lang="ts">
-import TopHeaderNavigationMenu from '~/components/header/TopHeaderNavigationMenu.vue'
-import TopHeaderActions from '~/components/header/TopHeaderActions.vue'
+import TopHeaderNavigationMenu from '~/components/common/header/TopHeaderNavigationMenu.vue'
+import TopHeaderActions from '~/components/common/header/TopHeaderActions.vue'
 </script>
 
 <style scoped>

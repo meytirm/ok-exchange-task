@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import TopHeader from '~/components/header/TopHeader.vue'
+import TopHeader from '~/components/common/header/TopHeader.vue'
 </script>
 
 <style scoped>

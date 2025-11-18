@@ -27,8 +27,8 @@
 
 <script setup lang="ts">
 import { Button } from '~/components/ui/button'
-import TopHeaderIcons from '~/components/header/TopHeaderIcons.vue'
-import Menu from '@/assets/icons/menu.svg'
+import TopHeaderIcons from '~/components/common/header/TopHeaderIcons.vue'
+import Menu from '~/assets/icons/menu.svg'
 </script>
 
 <style scoped>

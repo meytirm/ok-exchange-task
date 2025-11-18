@@ -75,7 +75,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from '@/components/ui/navigation-menu'
+} from '~/components/ui/navigation-menu'
 import { topHeaderNavigationMenu } from '~/constants/top-header-navigation-menu'
 </script>
 
