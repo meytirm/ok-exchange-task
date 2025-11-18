@@ -58,7 +58,7 @@
               class="hover:text-brand-foreground"
               as-child
             >
-              <a :href="menuItem.href">{{ menuItem.label }}</a>
+              <NuxtLink :href="menuItem.href">{{ menuItem.label }}</NuxtLink>
             </NavigationMenuLink>
           </template>
         </NavigationMenuItem>
