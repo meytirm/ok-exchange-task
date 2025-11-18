@@ -213,3 +213,7 @@ body {
 .introduce-sub-text {
   @apply text-xl leading-9 font-semibold text-grey-new-200;
 }
+
+.introduce-join {
+  @apply flex gap-2;
+}
