@@ -39,6 +39,7 @@
                   </div>
                   <img
                     v-if="crypto.isHot"
+                    class="lg:block hidden"
                     :src="HotIcon"
                   >
                 </div>
@@ -96,6 +97,7 @@
                   </div>
                   <img
                     v-if="crypto.isHot"
+                    class="lg:block hidden"
                     :src="HotIcon"
                   >
                 </div>
