@@ -5,6 +5,7 @@
     <PriceMarketDataSection />
     <CardSection />
     <AppSection />
+    <TrustUsSection />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import WhyUsSection from '~/components/page/index/why-us/WhyUsSection.vue'
 import PriceMarketDataSection from '~/components/page/index/PriceMarketDataSection.vue'
 import CardSection from '~/components/page/index/card/CardSection.vue'
 import AppSection from '~/components/page/index/AppSection.vue'
+import TrustUsSection from '~/components/page/index/trust-us/TrustUsSection.vue'
 </script>
 
 <style scoped>
