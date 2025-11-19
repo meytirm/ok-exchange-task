@@ -253,7 +253,7 @@ body {
 }
 
 .why-us-items {
-  @apply grid grid-cols-4 lg:justify-around justify-between;
+  @apply grid grid-cols-4 lg:justify-around justify-between lg:gap-0 gap-6;
 }
 
 .why-us-item {
