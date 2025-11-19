@@ -1,8 +1,8 @@
 <template>
   <section>
-    <h2 class="text-3xl font-bold leading-14 text-center">
+    <SectionTitle>
       Why Us
-    </h2>
+    </SectionTitle>
     <div class="why-us-items">
       <WhyUsItem
         v-for="(item, index) in whyUsItems"
@@ -18,6 +18,7 @@
 <script setup lang="ts">
 import WhyUsItem from '~/components/page/index/why-us/WhyUsItem.vue'
 import { whyUsItems } from '~/constants/why-us-items'
+import SectionTitle from '~/components/common/SectionTitle.vue'
 </script>
 
 <style scoped>
