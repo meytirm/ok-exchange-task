@@ -277,3 +277,19 @@ body {
 .card {
   @apply rounded-2xl p-4;
 }
+
+.carousel-dots {
+  @apply flex items-center justify-center;
+}
+
+.carousel-dots-container {
+  @apply flex justify-center;
+}
+
+.carousel-dot {
+  @apply w-4 h-1 rounded-[6px] bg-white-new-500 mx-1;
+}
+
+.carousel-dot.active {
+  @apply bg-grey-new-900;
+}
