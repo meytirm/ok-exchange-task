@@ -4,7 +4,7 @@
       v-model="tab"
       variant="default"
       :tabs="tabs"
-      class="lg:bg-auto !bg-transparent"
+      class="lg:!bg-white-new-100 !bg-transparent"
     >
       <template #app-header-right>
         <NuxtLink
