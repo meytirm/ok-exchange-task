@@ -11,10 +11,10 @@
     >
       Sign Up
     </BrandButton>
-    <div class="hidden md:block">
+    <div class="hidden lg:block">
       <TopHeaderIcons />
     </div>
-    <div class="md:hidden">
+    <div class="lg:hidden">
       <MobileNavigation />
     </div>
   </div>
@@ -24,7 +24,7 @@
 import { Button } from '~/components/ui/button'
 import TopHeaderIcons from '~/components/common/header/TopHeaderIcons.vue'
 import MobileNavigation from '~/components/common/MobileNavigation.vue'
-import BrandButton from '~/components/common/BrandButton.vue'
+import BrandButton from '~/components/common/buttons/BrandButton.vue'
 </script>
 
 <style scoped>

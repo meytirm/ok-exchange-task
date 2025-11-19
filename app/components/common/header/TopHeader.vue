@@ -1,6 +1,6 @@
 <template>
   <header class="top-header">
-    <div class="hidden md:block">
+    <div class="hidden lg:block">
       <TopHeaderNavigationMenu />
     </div>
     <TopHeaderActions />
