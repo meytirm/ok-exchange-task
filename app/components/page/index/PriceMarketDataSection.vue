@@ -14,7 +14,7 @@
       <div class="lg:col-span-2 col-span-3">
         <CryptoListTab />
       </div>
-      <div class="col-span-1 flex flex-col gap-5">
+      <div class="col-span-1 flex flex-col gap-5 lg:block hidden">
         <div class="grow bg-white-new-100 rounded-2xl p-4 flex flex-col">
           <div class="text-xl leading-9 font-semibold text-grey-new-900">
             Top 3 Losers
@@ -30,6 +30,20 @@
           <TopThreeTable class="grow" />
         </div>
       </div>
+      <div class="lg:hidden block col-span-3">
+        <AppTabs
+          v-model="tab"
+          class="bg-auto !bg-transparent"
+          :tabs="tabs"
+        >
+          <template #top3Losers>
+            <TopThreeTable />
+          </template>
+          <template #top3Gainers>
+            <TopThreeTable />
+          </template>
+        </AppTabs>
+      </div>
     </div>
   </section>
 </template>
@@ -39,6 +53,19 @@ import SectionTitle from '~/components/common/SectionTitle.vue'
 import CryptoListTab from '~/components/common/CryptoListTab.vue'
 import SectionSubtitle from '~/components/common/SectionSubtitle.vue'
 import TopThreeTable from '~/components/common/TopThreeTable.vue'
+import AppTabs from '~/components/common/AppTabs.vue'
+
+const tab = ref('topVolume')
+const tabs = [
+  {
+    title: 'Top 3 Losers',
+    value: 'top3Losers',
+  },
+  {
+    title: 'Top 3 Gainers',
+    value: 'top3Gainers',
+  },
+]
 </script>
 
 <style scoped>
