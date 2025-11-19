@@ -4,17 +4,20 @@
     :class="variantClasses"
   >
     <div class="app-tabs-header">
-      <div
-        v-for="tabItem in tabs"
-        :key="tabItem.value"
-        class="app-tabs-item"
-        :class="{
-          'app-tabs-item-active': tabItem.value === tab,
-        }"
-        @click="tab = tabItem.value"
-      >
-        {{ tabItem.title }}
+      <div class="app-tabs-header-left">
+        <div
+          v-for="tabItem in tabs"
+          :key="tabItem.value"
+          class="app-tabs-item"
+          :class="{
+            'app-tabs-item-active': tabItem.value === tab,
+          }"
+          @click="tab = tabItem.value"
+        >
+          {{ tabItem.title }}
+        </div>
       </div>
+      <slot name="app-header-right" />
     </div>
     <div class="app-tabs-content">
       <slot

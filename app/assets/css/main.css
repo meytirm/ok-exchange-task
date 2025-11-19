@@ -223,7 +223,11 @@ body {
 }
 
 .app-tabs-header {
-  @apply flex border-b border-b-[#ebebeb] gap-4;
+  @apply flex border-b border-b-[#ebebeb] justify-between;
+}
+
+.app-tabs-header-left {
+  @apply flex gap-4;
 }
 
 .app-tabs-item {
