@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-between">
+  <div class="flex flex-col gap-4 justify-between">
     <div
       v-for="(crypto, index) in cryptoPricesList.slice(0, 3)"
       :key="index"
@@ -10,15 +10,20 @@
           <img
             :src="cryptoIcons[crypto.symbol]"
             :alt="crypto.symbol"
-            width="32px"
+            class="lg:w-[32px] w-[16px]"
           >
-          <div class="flex flex-col">
-            <span class="text-sm font-medium">
+          <div class="flex lg:flex-col flex-row gap-1">
+            <span class="text-sm font-medium lg:block hidden">
               {{ crypto.name }}
-
             </span>
-            <span class="text-sm text-grey-new-0">
+            <span class="text-sm font-medium lg:hidden block">
               {{ crypto.symbol }}
+            </span>
+            <span class="text-sm text-grey-new-0 lg:block hidden">
+              {{ crypto.symbol }}
+            </span>
+            <span class="text-sm text-grey-new-0 lg:hidden block">
+              {{ crypto.name }}
             </span>
           </div>
         </div>
