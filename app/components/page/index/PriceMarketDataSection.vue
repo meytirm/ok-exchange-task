@@ -1,15 +1,17 @@
 <template>
   <section>
-    <SectionTitle>
-      Live Cryptocurrency Prices Market Data
-    </SectionTitle>
-    <SectionSubtitle>
-      Top Gainers Today
-    </SectionSubtitle>
+    <div class="lg:block hidden">
+      <SectionTitle>
+        Live Cryptocurrency Prices Market Data
+      </SectionTitle>
+      <SectionSubtitle>
+        Top Gainers Today
+      </SectionSubtitle>
+    </div>
     <div
       class="grid grid-cols-3 gap-5"
     >
-      <div class="col-span-2">
+      <div class="lg:col-span-2 col-span-3">
         <CryptoListTab />
       </div>
       <div class="col-span-1 flex flex-col gap-5">
