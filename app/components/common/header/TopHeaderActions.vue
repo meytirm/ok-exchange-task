@@ -24,7 +24,7 @@
 import { Button } from '~/components/ui/button'
 import TopHeaderIcons from '~/components/common/header/TopHeaderIcons.vue'
 import MobileNavigation from '~/components/common/MobileNavigation.vue'
-import BrandButton from '~/components/common/BrandButton.vue'
+import BrandButton from '~/components/common/buttons/BrandButton.vue'
 </script>
 
 <style scoped>
