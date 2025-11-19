@@ -217,3 +217,33 @@ body {
 .introduce-join {
   @apply flex gap-2;
 }
+
+.app-tabs {
+  @apply flex flex-col rounded-2xl p-4;
+}
+
+.app-tabs-header {
+  @apply flex border-b border-b-[#ebebeb] gap-4;
+}
+
+.app-tabs-item {
+  @apply text-xl text-black relative cursor-pointer shrink-0 pb-1 font-semibold;
+}
+
+.app-tabs-item-active {
+
+}
+
+.app-tabs-item-active::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  background: var(--brand-foreground);
+  left: 0;
+  right: 0;
+  bottom: -2px;
+}
+
+.app-tabs-content {
+  @apply mt-4;
+}
