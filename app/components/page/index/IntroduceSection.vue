@@ -47,7 +47,7 @@
       </div>
     </div>
     <div class="w-[35%]">
-      chart
+      <CryptoTab />
     </div>
   </div>
 </template>
@@ -64,6 +64,7 @@ import {
   FieldGroup,
 } from '@/components/ui/field'
 import GoogleButton from '~/components/common/header/GoogleButton.vue'
+import CryptoTab from '~/components/common/CryptoTab.vue'
 
 const formSchema = toTypedSchema(
   z.object({
