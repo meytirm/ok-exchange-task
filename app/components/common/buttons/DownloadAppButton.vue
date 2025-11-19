@@ -1,7 +1,7 @@
 <template>
   <Button
     size="lg"
-    class="bg-white-new-200 justify-start px-10 h-[45px]"
+    class="bg-white-new-200 justify-start lg:px-10 lg:h-[45px]"
   >
     <div class="flex items-center">
       <img
@@ -9,9 +9,9 @@
         :alt="alt"
         width="23px"
         height="28px"
-        class="mr-4"
+        class="mr-4 lg:w-[23px] lg:h-[28px] w-[13px] h-[16px]"
       >
-      <span class="text-base font-semibold text-grey-new-900">{{ text }}</span>
+      <span class="lg:text-base text-sm font-semibold text-grey-new-900">{{ text }}</span>
     </div>
   </Button>
 </template>
