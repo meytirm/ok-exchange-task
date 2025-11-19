@@ -14,7 +14,7 @@
       <div class="lg:col-span-2 col-span-3">
         <CryptoListTab />
       </div>
-      <div class="col-span-1 flex flex-col gap-5 lg:block hidden">
+      <div class="col-span-1 flex-col gap-5 lg:flex hidden">
         <div class="grow bg-white-new-100 rounded-2xl p-4 flex flex-col">
           <div class="text-xl leading-9 font-semibold text-grey-new-900">
             Top 3 Losers
