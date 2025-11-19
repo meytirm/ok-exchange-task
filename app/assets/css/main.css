@@ -231,7 +231,7 @@ body {
 }
 
 .app-tabs-item {
-  @apply text-xl text-black relative cursor-pointer shrink-0 pb-1 font-semibold;
+  @apply text-xl text-black relative cursor-pointer shrink-0 font-semibold leading-9;
 }
 
 .app-tabs-item-active {
