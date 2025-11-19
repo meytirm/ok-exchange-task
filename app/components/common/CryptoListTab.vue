@@ -25,16 +25,18 @@
               :key="index"
             >
               <td>
-                <div class="flex items-center gap-2">
+                <div class="flex lg:items-center items-start gap-2">
                   <img
                     :src="cryptoIcons[crypto.symbol]"
                     :alt="crypto.symbol"
-                    width="32px"
+                    class="lg:w-[32px] w-[16px]"
                   >
-                  <div class="flex gap-2">
-                    <span class="text-sm font-medium">
+                  <div class="flex gap-2 lg:flex-row flex-col">
+                    <span class="text-sm font-medium ">
                       {{ crypto.title }}
-
+                    </span>
+                    <span class="text-xs lg:hidden block text-grey-new-0">
+                      {{ crypto.count }} M
                     </span>
                   </div>
                   <img
@@ -45,16 +47,24 @@
                 </div>
               </td>
               <td>
-                <span class="text-sm font-medium">
-                  $ {{ crypto.price.toLocaleString() }}
-                </span>
+                <div>
+                  <span class="text-sm font-medium">
+                    $ {{ crypto.price.toLocaleString() }}
+                  </span>
+                  <span
+                    class="text-sm font-medium lg:hidden block"
+                    :class="Math.sign(crypto.profit) === 1 ? 'text-buy' : 'text-sell'"
+                  >
+                    {{ Math.sign(crypto.profit) === 1 ? '+' : '' }}{{ crypto.profit }}%
+                  </span>
+                </div>
               </td>
-              <td>
+              <td class="lg:block hidden">
                 <span class="text-sm font-medium">
                   {{ crypto.count }} M
                 </span>
               </td>
-              <td>
+              <td class="lg:block hidden">
                 <span
                   class="text-sm font-medium"
                   :class="Math.sign(crypto.profit) === 1 ? 'text-buy' : 'text-sell'"
@@ -83,16 +93,18 @@
               :key="index"
             >
               <td>
-                <div class="flex items-center gap-2">
+                <div class="flex lg:items-center items-start gap-2">
                   <img
                     :src="cryptoIcons[crypto.symbol]"
                     :alt="crypto.symbol"
-                    width="32px"
+                    class="lg:w-[32px] w-[16px]"
                   >
-                  <div class="flex gap-2">
-                    <span class="text-sm font-medium">
+                  <div class="flex gap-2 lg:flex-row flex-col">
+                    <span class="text-sm font-medium ">
                       {{ crypto.title }}
-
+                    </span>
+                    <span class="text-xs lg:hidden block text-grey-new-0">
+                      {{ crypto.count }} M
                     </span>
                   </div>
                   <img
@@ -103,16 +115,24 @@
                 </div>
               </td>
               <td>
-                <span class="text-sm font-medium">
-                  $ {{ crypto.price.toLocaleString() }}
-                </span>
+                <div>
+                  <span class="text-sm font-medium">
+                    $ {{ crypto.price.toLocaleString() }}
+                  </span>
+                  <span
+                    class="text-sm font-medium lg:hidden block"
+                    :class="Math.sign(crypto.profit) === 1 ? 'text-buy' : 'text-sell'"
+                  >
+                    {{ Math.sign(crypto.profit) === 1 ? '+' : '' }}{{ crypto.profit }}%
+                  </span>
+                </div>
               </td>
-              <td>
+              <td class="lg:block hidden">
                 <span class="text-sm font-medium">
                   {{ crypto.count }} M
                 </span>
               </td>
-              <td>
+              <td class="lg:block hidden">
                 <span
                   class="text-sm font-medium"
                   :class="Math.sign(crypto.profit) === 1 ? 'text-buy' : 'text-sell'"
