@@ -22,7 +22,7 @@
         </div>
         <div class="grow bg-white-new-100 rounded-2xl p-4 flex flex-col">
           <div class="text-xl leading-9 font-semibold text-grey-new-900">
-            Top 3 Losers
+            Top 3 Gainers
           </div>
           <hr class="mb-4 border-white-new-300">
           <TopThreeTable class="grow" />
