@@ -12,3 +12,17 @@ export interface TopHeaderNavigationMenu {
   }[]
 
 }
+
+export interface CryptoPrice {
+  symbol: string
+  name: string
+  title: string
+  isHot: boolean
+  price: number
+  count: number
+  profit: number
+}
+
+export interface CryptoIcons {
+  [key: string]: string
+}
