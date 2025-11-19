@@ -233,7 +233,7 @@ body {
 }
 
 .app-tabs-item {
-  @apply text-xl text-black relative cursor-pointer shrink-0 font-semibold leading-9;
+  @apply lg:text-xl text-sm text-black relative cursor-pointer shrink-0 lg:font-semibold font-normal leading-9;
 }
 
 .app-tabs-item-active {
