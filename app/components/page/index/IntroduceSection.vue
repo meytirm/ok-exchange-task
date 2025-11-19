@@ -1,6 +1,6 @@
 <template>
   <div class="introduce-section">
-    <div class="flex flex-col w-[65%] gap-6">
+    <div class="flex flex-col md:w-[65%] w-full gap-6">
       <p class="introduce-text">
         Buy, Trade & Earn Bitcoin and 100+ Cryptocurrencies
       </p>
@@ -46,7 +46,7 @@
         <GoogleButton />
       </div>
     </div>
-    <div class="w-[35%]">
+    <div class="md:w-[35%] w-full">
       <CryptoMiniListTab />
     </div>
   </div>
@@ -54,7 +54,7 @@
 
 <script setup lang="ts">
 import { Input } from '~/components/ui/input'
-import BrandButton from '~/components/common/BrandButton.vue'
+import BrandButton from '~/components/common/buttons/BrandButton.vue'
 import { toTypedSchema } from '@vee-validate/zod'
 import { z } from 'zod'
 import { useForm, Field as VeeField } from 'vee-validate'
@@ -63,7 +63,7 @@ import {
   FieldError,
   FieldGroup,
 } from '@/components/ui/field'
-import GoogleButton from '~/components/common/header/GoogleButton.vue'
+import GoogleButton from '~/components/common/buttons/GoogleButton.vue'
 import CryptoMiniListTab from '~/components/common/CryptoMiniListTab.vue'
 
 const formSchema = toTypedSchema(
