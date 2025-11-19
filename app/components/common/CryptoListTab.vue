@@ -60,12 +60,12 @@
                   </span>
                 </div>
               </td>
-              <td class="lg:block hidden">
+              <td class="lg:table-cell hidden">
                 <span class="text-sm font-medium">
                   {{ crypto.count }} M
                 </span>
               </td>
-              <td class="lg:block hidden">
+              <td class="lg:table-cell hidden">
                 <span
                   class="text-sm font-medium"
                   :class="Math.sign(crypto.profit) === 1 ? 'text-buy' : 'text-sell'"
@@ -128,12 +128,12 @@
                   </span>
                 </div>
               </td>
-              <td class="lg:block hidden">
+              <td class="lg:table-cell hidden">
                 <span class="text-sm font-medium">
                   {{ crypto.count }} M
                 </span>
               </td>
-              <td class="lg:block hidden">
+              <td class="lg:table-cell hidden">
                 <span
                   class="text-sm font-medium"
                   :class="Math.sign(crypto.profit) === 1 ? 'text-buy' : 'text-sell'"
