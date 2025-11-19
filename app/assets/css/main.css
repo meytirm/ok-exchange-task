@@ -251,3 +251,19 @@ body {
 .app-tabs-content {
   @apply mt-4;
 }
+
+.why-us-items {
+  @apply grid grid-cols-4 lg:justify-around justify-between;
+}
+
+.why-us-item {
+  @apply flex flex-col lg:items-center gap-2 lg:col-span-1 col-span-2;
+}
+
+.why-us-item-label {
+  @apply text-[16px] text-grey-new-200;
+}
+
+.why-us-item-value {
+  @apply text-xl font-semibold leading-9 text-grey-new-900;
+}
