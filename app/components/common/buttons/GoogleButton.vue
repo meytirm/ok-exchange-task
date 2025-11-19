@@ -8,11 +8,14 @@
       alt="google"
       width="28px"
     >
+    <span class="text-sm font-semibold leading-6 md:hidden block text-grey-new-900">
+      Sign Up with Google
+    </span>
   </Button>
 </template>
 
 <script setup lang="ts">
-import Google from '@/assets/icons/google.svg'
+import Google from '~/assets/icons/google.svg'
 </script>
 
 <style scoped>
