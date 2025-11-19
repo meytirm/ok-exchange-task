@@ -293,3 +293,19 @@ body {
 .carousel-dot.active {
   @apply bg-grey-new-900;
 }
+
+.trust-us-item {
+  @apply flex flex-col items-center gap-4;
+}
+
+.trust-us-item-content {
+  @apply flex flex-col items-center;
+}
+
+.trust-us-item-title {
+  @apply text-xl font-semibold leading-9 text-grey-new-900;
+}
+
+.trust-us-item-description {
+  @apply text-base leading-7 text-grey-new-200;
+}
