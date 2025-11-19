@@ -10,34 +10,33 @@
           <img
             :src="cryptoIcons[crypto.symbol]"
             :alt="crypto.symbol"
+            width="32px"
           >
-          <div class="flex gap-2">
+          <div class="flex flex-col">
             <span class="text-sm font-medium">
-              {{ crypto.symbol }}
+              {{ crypto.name }}
 
             </span>
             <span class="text-sm text-grey-new-0">
-              {{ crypto.name }}
+              {{ crypto.symbol }}
             </span>
           </div>
-          <img
-            v-if="crypto.isHot"
-            :src="HotIcon"
-          >
         </div>
       </div>
-      <div>
-        <span class="text-sm font-medium">
-          $ {{ crypto.price.toLocaleString() }}
-        </span>
-      </div>
-      <div>
-        <span
-          class="text-sm font-medium"
-          :class="Math.sign(crypto.profit) === 1 ? 'text-buy' : 'text-sell'"
-        >
-          {{ Math.sign(crypto.profit) === 1 ? '+' : '' }}{{ crypto.profit }}%
-        </span>
+      <div class="flex flex-col items-end">
+        <div>
+          <span class="text-sm font-medium">
+            $ {{ crypto.price.toLocaleString() }}
+          </span>
+        </div>
+        <div>
+          <span
+            class="text-sm font-medium"
+            :class="Math.sign(crypto.profit) === 1 ? 'text-buy' : 'text-sell'"
+          >
+            {{ Math.sign(crypto.profit) === 1 ? '+' : '' }}{{ crypto.profit }}%
+          </span>
+        </div>
       </div>
     </div>
   </div>
