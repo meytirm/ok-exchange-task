@@ -18,13 +18,13 @@
         </NuxtLink>
       </template>
       <template #hotFutures>
-        <table class="w-full">
+        <table class="w-full border-separate border-spacing-x-0 border-spacing-y-4">
           <tbody>
             <tr
               v-for="(crypto, index) in cryptoPricesList.slice(0, 5)"
               :key="index"
             >
-              <td class="pb-4">
+              <td>
                 <div class="flex items-center gap-2">
                   <img
                     :src="cryptoIcons[crypto.symbol]"
@@ -64,13 +64,13 @@
       </template>
 
       <template #newlyAdded>
-        <table class="w-full">
+        <table class="w-full border-separate border-spacing-x-0 border-spacing-y-4">
           <tbody>
             <tr
               v-for="(crypto, index) in cryptoPricesList.slice(0, 5)"
               :key="index"
             >
-              <td class="pb-4">
+              <td>
                 <div class="flex items-center gap-2">
                   <img
                     :src="cryptoIcons[crypto.symbol]"
