@@ -55,7 +55,7 @@ import SectionSubtitle from '~/components/common/SectionSubtitle.vue'
 import TopThreeTable from '~/components/common/TopThreeTable.vue'
 import AppTabs from '~/components/common/AppTabs.vue'
 
-const tab = ref('topVolume')
+const tab = ref('top3Losers')
 const tabs = [
   {
     title: 'Top 3 Losers',
