@@ -1,15 +1,15 @@
 <template>
   <div class="introduce-section">
-    <div class="flex flex-col md:w-[65%] w-full gap-6">
+    <div class="flex flex-col lg:w-[65%] w-full gap-6">
       <p class="introduce-text">
-        Buy, Trade & Earn Bitcoin and 100+ Cryptocurrencies
+        Buy, Trade & Earn Bitcoin and<br>100+ Cryptocurrencies
       </p>
       <p class="introduce-sub-text">
         Secure platform to trade Bitcoin, Ethereum and altcoins with low fees
       </p>
       <div class="introduce-join">
         <form
-          class="flex gap-2 items-center max-w-[70%] grow"
+          class="flex lg:flex-row flex-col gap-2 items-center lg:max-w-[70%] grow"
           @submit.prevent="onSubmit"
         >
           <FieldGroup>
@@ -37,6 +37,7 @@
             </VeeField>
           </FieldGroup>
           <BrandButton
+            class="lg:w-auto w-full"
             type="submit"
             size="lg"
           >
@@ -46,7 +47,7 @@
         <GoogleButton />
       </div>
     </div>
-    <div class="md:w-[35%] w-full">
+    <div class="lg:w-[35%] w-full">
       <CryptoMiniListTab />
     </div>
   </div>

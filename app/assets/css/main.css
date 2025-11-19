@@ -186,11 +186,16 @@ body {
 }
 
 @utility container {
-  @apply mx-auto w-full px-4;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 1280px;
 }
 
 .top-header {
-  @apply px-8 py-4 flex md:justify-between items-center justify-end;
+  @apply px-8 py-4 flex lg:justify-between items-center justify-end;
 }
 
 .top-header-navigation-menu-trigger {
@@ -198,19 +203,19 @@ body {
 }
 
 .introduce-section {
-  @apply flex md:flex-row flex-col items-start justify-between gap-32 ;
+  @apply flex lg:flex-row flex-col items-start justify-between;
 }
 
 .introduce-text {
-  @apply md:text-4xl-custom md:font-bold text-3xl font-bold text-grey-new-900 md:leading-16 leading-14;
+  @apply lg:text-4xl-custom lg:font-bold text-3xl font-bold text-grey-new-900 lg:leading-16 leading-14;
 }
 
 .introduce-sub-text {
-  @apply text-xl md:leading-9 leading-8 md:font-semibold text-grey-new-200;
+  @apply text-xl lg:leading-9 leading-8 lg:font-semibold text-grey-new-200;
 }
 
 .introduce-join {
-  @apply flex gap-2;
+  @apply flex lg:flex-row flex-col gap-2;
 }
 
 .app-tabs {

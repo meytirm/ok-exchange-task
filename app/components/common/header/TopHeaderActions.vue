@@ -11,10 +11,10 @@
     >
       Sign Up
     </BrandButton>
-    <div class="hidden md:block">
+    <div class="hidden lg:block">
       <TopHeaderIcons />
     </div>
-    <div class="md:hidden">
+    <div class="lg:hidden">
       <MobileNavigation />
     </div>
   </div>

@@ -8,7 +8,7 @@
       alt="google"
       width="28px"
     >
-    <span class="text-sm font-semibold leading-6 md:hidden block text-grey-new-900">
+    <span class="text-sm font-semibold leading-6 lg:hidden block text-grey-new-900">
       Sign Up with Google
     </span>
   </Button>
