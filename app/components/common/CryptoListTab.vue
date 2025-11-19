@@ -1,0 +1,158 @@
+<template>
+  <div>
+    <AppTabs
+      v-model="tab"
+      variant="default"
+      :tabs="tabs"
+    >
+      <template #app-header-right>
+        <NuxtLink
+          href="#"
+          class="flex items-center gap-2"
+        >
+          <span class="text-xs text-grey-new-0">View More</span>
+          <img
+            :src="ArrowRight"
+            alt="arrow right"
+          >
+        </NuxtLink>
+      </template>
+      <template #topVolume>
+        <table class="w-full border-separate border-spacing-x-0 border-spacing-y-4">
+          <tbody>
+            <tr
+              v-for="(crypto, index) in cryptoPricesList"
+              :key="index"
+            >
+              <td>
+                <div class="flex items-center gap-2">
+                  <img
+                    :src="cryptoIcons[crypto.symbol]"
+                    :alt="crypto.symbol"
+                    width="32px"
+                  >
+                  <div class="flex gap-2">
+                    <span class="text-sm font-medium">
+                      {{ crypto.title }}
+
+                    </span>
+                  </div>
+                  <img
+                    v-if="crypto.isHot"
+                    :src="HotIcon"
+                  >
+                </div>
+              </td>
+              <td>
+                <span class="text-sm font-medium">
+                  $ {{ crypto.price.toLocaleString() }}
+                </span>
+              </td>
+              <td>
+                <span class="text-sm font-medium">
+                  {{ crypto.count }} M
+                </span>
+              </td>
+              <td>
+                <span
+                  class="text-sm font-medium"
+                  :class="Math.sign(crypto.profit) === 1 ? 'text-buy' : 'text-sell'"
+                >
+                  {{ Math.sign(crypto.profit) === 1 ? '+' : '' }}{{ crypto.profit }}%
+                </span>
+              </td>
+              <td>
+                <NuxtLink
+                  href="#"
+                  class="text-brand-foreground text-sm font-medium"
+                >
+                  Trade
+                </NuxtLink>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </template>
+
+      <template #hotTokes>
+        <table class="w-full border-separate border-spacing-x-0 border-spacing-y-4">
+          <tbody>
+            <tr
+              v-for="(crypto, index) in cryptoPricesList"
+              :key="index"
+            >
+              <td>
+                <div class="flex items-center gap-2">
+                  <img
+                    :src="cryptoIcons[crypto.symbol]"
+                    :alt="crypto.symbol"
+                    width="32px"
+                  >
+                  <div class="flex gap-2">
+                    <span class="text-sm font-medium">
+                      {{ crypto.title }}
+
+                    </span>
+                  </div>
+                  <img
+                    v-if="crypto.isHot"
+                    :src="HotIcon"
+                  >
+                </div>
+              </td>
+              <td>
+                <span class="text-sm font-medium">
+                  $ {{ crypto.price.toLocaleString() }}
+                </span>
+              </td>
+              <td>
+                <span class="text-sm font-medium">
+                  {{ crypto.count }} M
+                </span>
+              </td>
+              <td>
+                <span
+                  class="text-sm font-medium"
+                  :class="Math.sign(crypto.profit) === 1 ? 'text-buy' : 'text-sell'"
+                >
+                  {{ Math.sign(crypto.profit) === 1 ? '+' : '' }}{{ crypto.profit }}%
+                </span>
+              </td>
+              <td>
+                <NuxtLink
+                  href="#"
+                  class="text-brand-foreground text-sm font-medium"
+                >
+                  Trade
+                </NuxtLink>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </template>
+    </AppTabs>
+  </div>
+</template>
+
+<script setup lang="ts">
+import AppTabs from '~/components/common/AppTabs.vue'
+import ArrowRight from '@/assets/icons/arrow-right.svg'
+import { cryptoPricesList, cryptoIcons } from '~/constants/crypto-prices-list'
+import HotIcon from '@/assets/icons/hot.svg'
+
+const tab = ref('topVolume')
+const tabs = [
+  {
+    title: 'Top volume',
+    value: 'topVolume',
+  },
+  {
+    title: 'Hot Tokes',
+    value: 'hotTokes',
+  },
+]
+</script>
+
+<style>
+
+</style>
