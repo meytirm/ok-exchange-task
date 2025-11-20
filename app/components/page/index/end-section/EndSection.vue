@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-20 flex flex-col gap-20">
+  <div class="mt-20 flex flex-col lg:gap-20 gap-8">
     <BitcoinSection />
     <FrequentlyQuestionsSection />
     <FooterSection />
