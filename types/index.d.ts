@@ -26,3 +26,15 @@ export interface CryptoPrice {
 export interface CryptoIcons {
   [key: string]: string
 }
+
+export interface AccordionItem { title: string, content: string }
+
+export interface MenuChild {
+  title: string
+  href: string
+}
+
+export interface FooterMenu {
+  title: string
+  children: MenuChild[]
+}

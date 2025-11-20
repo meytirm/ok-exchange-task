@@ -8,6 +8,7 @@
     <TrustUsSection />
     <TellAboutUsSection />
     <EarningTodaySection />
+    <EndSection />
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import AppSection from '~/components/page/index/AppSection.vue'
 import TrustUsSection from '~/components/page/index/trust-us/TrustUsSection.vue'
 import TellAboutUsSection from '~/components/page/index/tell-about-us/TellAboutUsSection.vue'
 import EarningTodaySection from '~/components/page/index/EarningTodaySection.vue'
+import EndSection from '~/components/page/index/end-section/EndSection.vue'
 </script>
 
 <style scoped>
