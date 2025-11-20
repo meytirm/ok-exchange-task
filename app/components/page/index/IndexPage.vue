@@ -6,6 +6,7 @@
     <CardSection />
     <AppSection />
     <TrustUsSection />
+    <TellAboutUsSection />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import PriceMarketDataSection from '~/components/page/index/PriceMarketDataSecti
 import CardSection from '~/components/page/index/card/CardSection.vue'
 import AppSection from '~/components/page/index/AppSection.vue'
 import TrustUsSection from '~/components/page/index/trust-us/TrustUsSection.vue'
+import TellAboutUsSection from '~/components/page/index/tell-about-us/TellAboutUsSection.vue'
 </script>
 
 <style scoped>
