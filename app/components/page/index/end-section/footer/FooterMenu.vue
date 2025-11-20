@@ -58,9 +58,6 @@
 
 <script setup lang="ts">
 import { footerMenu } from '~/constants/footer-menu'
-import { accordionItems } from '~/constants/accordion-items'
-import AddIcon from '~/assets/icons/add.svg'
-import RemoveIcon from '~/assets/icons/remove.svg'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '~/components/ui/accordion'
 </script>
 
