@@ -49,7 +49,6 @@
 
 <script setup lang="ts">
 import { cryptoIcons, cryptoPricesList } from '~/constants/crypto-prices-list'
-import HotIcon from '~/assets/icons/hot.svg'
 </script>
 
 <style scoped>
