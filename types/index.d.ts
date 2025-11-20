@@ -28,3 +28,13 @@ export interface CryptoIcons {
 }
 
 export interface AccordionItem { title: string, content: string }
+
+export interface MenuChild {
+  title: string
+  href: string
+}
+
+export interface FooterMenu {
+  title: string
+  children: MenuChild[]
+}
