@@ -1,7 +1,7 @@
 <template>
   <Button
     size="lg"
-    class="bg-white-new-200 justify-start lg:px-10 lg:h-[45px]"
+    class="bg-white-new-200 justify-start lg:px-10 lg:h-[45px] hover:bg-white-new-300/80"
   >
     <div class="flex items-center">
       <img
