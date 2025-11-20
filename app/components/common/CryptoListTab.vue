@@ -19,7 +19,7 @@
         </NuxtLink>
       </template>
       <template #topVolume>
-        <table class="w-full border-separate border-spacing-x-0 border-spacing-y-4">
+        <table class="w-full border-separate border-spacing-x-0 border-spacing-y-5.5">
           <tbody>
             <tr
               v-for="(crypto, index) in cryptoPricesList"
@@ -87,7 +87,7 @@
       </template>
 
       <template #hotTokes>
-        <table class="w-full border-separate border-spacing-x-0 border-spacing-y-4">
+        <table class="w-full border-separate border-spacing-x-0 border-spacing-y-5.5">
           <tbody>
             <tr
               v-for="(crypto, index) in cryptoPricesList"
