@@ -26,3 +26,5 @@ export interface CryptoPrice {
 export interface CryptoIcons {
   [key: string]: string
 }
+
+export interface AccordionItem { title: string, content: string }
