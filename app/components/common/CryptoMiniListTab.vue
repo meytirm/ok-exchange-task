@@ -67,7 +67,7 @@
         <table class="w-full border-separate border-spacing-x-0 border-spacing-y-4">
           <tbody>
             <tr
-              v-for="(crypto, index) in cryptoPricesList.slice(0, 5)"
+              v-for="(crypto, index) in cryptoPricesList.slice(0, 4)"
               :key="index"
             >
               <td>
